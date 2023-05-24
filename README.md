@@ -89,3 +89,4 @@ The two loader share the same dataset but samples are selected by the `hidden_ze
 ```
 
 ## Examples of running script
+See example script in scripts subfolders
