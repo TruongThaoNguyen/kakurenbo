@@ -8,6 +8,7 @@ We implemented the following method:
  3. [Importance sampling without replacement](https://arxiv.org/pdf/1803.00942.pdf) with the ``is_WR` postfix. In each iteration, each sample is chosen with a probability proportional to its loss. The with-replacement strategy means that a sample may be selected several times during an epoch, and the total number of samples fed to the model is the same as the baseline implementation
  4. [Prunning using forgeting event](https://arxiv.org/pdf/1812.05159.pdf) with the `forget_original` postfix. It trains the models in 20 epoches, collect the number of forgeting events, remove the samples from the dataset based on the forgeting event number, and then trains the models from scratch on the remaining data.
  5. [Selective Backprop](https://arxiv.org/pdf/1910.00762.pdf) with the `sb` postfix. The method prioritizes samples with high loss at each iteration. It performs the forward pass on the whole dataset, but only performs backpropagation on a subset of the dataset. Samples with higher loss has a higher possibility to be selected to perform the backward pass.
+ 6. [GradMatch](https://arxiv.org/pdf/2103.00123.pdf). We use the orignial code of [GradMatch's github](https://github.com/decile-team/cords) to run it in a single GPU because the algorithm is difficult to scale. We intergrated KAKURENBO into this code to compare two methods (See the GradMatch folder for more detail)
 
 ## Models and datasets
 In this repository, we provide the code for the following models and datasets:
@@ -90,3 +91,5 @@ The two loader share the same dataset but samples are selected by the `hidden_ze
 
 ## Examples of running script
 See example script in scripts subfolders
+Running script for gradMatch is in `\GradMatch\cords\examples\SL\image_classification\python_files\run_cifar100.py`
+
