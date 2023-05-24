@@ -14,13 +14,13 @@ NUM_NODES=${NHOSTS}
 NUM_GPUS_PER_NODE=4
 #NUM_GPUS_PER_SOCKET=$(expr ${NUM_GPUS_PER_NODE} / 2)
 NUM_PROCS=$(expr ${NUM_NODES} \* ${NUM_GPUS_PER_NODE})
-EPOCH=800
+EPOCH=600
 LR=0.11 #LR="0.125" # RAW: 0.5 with 8 GPUs - FIX THIS VERSION
 LR_Scheduler="cosineLRScheduler"  #"cosineannealinglr"
 Weight_Decay=0.00001 #0.00002
 LR_Warmup_Method="linear"
 Label_smoothing=0.1
-Batch_Size=128
+Batch_Size=64
 Auto_Augment="ta_wide"
 Random_Erase=0.4 #0.1
 TRAIN_CROP=176
