@@ -1,7 +1,7 @@
 ## UPDATE on 20231016
 The project is under approval for being published. Please contact nguyen.truong@aist.go.jp if you have any request?
 
-The main idea of this implementation is in this [Neurips2023 paper]{https://nips.cc/virtual/2023/poster/72225}
+The main idea of this implementation is in this [https://nips.cc/virtual/2023/poster/72225]{Neurips2023 paper} (KAKURENBO: Adaptively Hiding Samples in Deep Neural Network Training)
 
 ## Summary
 This repository contains the implementation of KAKURENBO, an method hides the sampling adaptively during the training process, in Python/PyTorch. It also contains the implementation of other methods that remove samples. All the implementations edit the original code of the baseline training python scripts case by case. 
