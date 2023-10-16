@@ -1,4 +1,4 @@
-### UPDATE 20231016
+## UPDATE on 20231016
 The project is under approval for being published. Please contact nguyen.truong@aist.go.jp if you have any request?
 
 

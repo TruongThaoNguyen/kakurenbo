@@ -1,3 +1,0 @@
-# To run within interactive node.
-
-mpirun --bind-to none -np 4 python pretrain_sb.py dataset/FDB1k-1ins --model deit_tiny_patch16_224 --experiment test_cpu  --input-size 3 224 224  --mean 0.5 0.5 0.5 --std 0.5 0.5 0.5  --color-jitter 0.4     --hflip 0.5 --vflip 0.5 --scale 0.08 1.0 --ratio 0.75 1.3333  --opt adamw --lr 1.0e-3 --weight-decay 0.05 --deit-scale     --sched cosine_iter --min-lr 1.0e-5 --warmup-lr 1e-06 --warmup-epochs 5 --warmup-iter 5000 --cooldown-epochs 0     --aa rand-m9-mstd0.5-inc1  --interpolation bicubic     --reprob 0.5 --remode pixel     --batch-size 32 --drop-path 0.1     --num-classes 1000 --output test_interactive  --eval-metric loss --epochs 100 --log-interval 1 -j 16 --no-prefetcher --amp

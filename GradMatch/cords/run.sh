@@ -1,1 +1,0 @@
-python examples/SL/image_classification/python_files/run_cifar10_glister.py

@@ -1,1 +1,0 @@
-from .tinyimagenet import TinyImageNet
