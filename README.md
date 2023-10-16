@@ -1,3 +1,7 @@
+### UPDATE 20231016
+The project is under approval for being published. Please contact nguyen.truong@aist.go.jp if you have any request?
+
+
 ## Summary
 This repository contains the implementation of KAKURENBO, an method hides the sampling adaptively during the training process, in Python/PyTorch. It also contains the implementation of other methods that remove samples. All the implementations edit the original code of the baseline training python scripts case by case. 
 
