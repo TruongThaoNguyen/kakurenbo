@@ -1,6 +1,3 @@
-## UPDATE on 20231016
-The project is under approval for being published. Please contact nguyen.truong@aist.go.jp if you have any request?
-
 The main idea of this implementation is in this paper [KAKURENBO: Adaptively Hiding Samples in Deep Neural Network Training](https://nips.cc/virtual/2023/poster/72225)
 
 ## Summary
